@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+  }
+ 
+.container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    position: relative;
+  }
+  
+.container::after{
+   content: "";
+    background: url(https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=) no-repeat center fixed;
+    background-size: cover;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;  
+  }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  background-color: rgba(225, 228, 223, 0.5);
+}
+
+#logo-name {
+  margin-top: 2rem;
+  margin-left: 5px;
+  font-size: 2rem;
+}
+
+#header-img {
+  width: 4rem;
+  padding-left: 5rem;
+} 
+
+li {
+  list-style: none;
+}
+
+a {
+  font-family: Calisto MT, Calibri, sans-serif;
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
+}
+
+#nav-bar {
+  position: fixed;
+  margin-top: 0rem;
+  }
+
+nav > ul {
+  width: 38vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2.2rem;
+  margin-left: 880px;
+}
+
+img.img-thumbnail{
+  width: 80%;
+  height: 80%;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr;
+  
+}
+
+#marvel-row{
+  margin-top: 8rem ;
+  margin-left: 6.5rem;
+}
+
+#ctn-icon-search{
+ cursor: pointer;
+}
+
+#inputSearch{
+  outline: 0;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#box-search{
+  position: fixed;
+  top: 65px;
+  margin-left: 21px;
+  width: 248px;
+  background-color: white;
+  z-index: 8;
+  display: none;
+}
+
+#box-search li a{
+  display: block;
+  width: 200px;
+  color: grey;
+  padding: 12px 20px;
+}
+
+#box-search li a:hover{
+  color: blue;
+}
+
+#box-search li a i{
+  margin-right: 10px;
+}
+
+.indicadores{
+	display: flex;
+	justify-content: center ;
+	align-items: center;
+}
+
+.indicadores > button{
+	background: white;
+	height: 40px;
+	width: 60px;
+	cursor: pointer;
+	border: none;
+	margin-right: 5px;
+}
+
+.indicadores > button:hover,
+.indicadores > button.activo{
+	background: red;
+}
+
+/*Footer Section*/
+#footer-section{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  /*
+footer > button{
+	display: flex;
+    justify-content: flex-end;
+}*/
+
+ span{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.1em;
+    color: whitesmoke;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+  }
+ 
+
+@media screen and (max-width: 800px){
+	header .logo-name {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+	
+	header .nav-bar{
+		flex-direction: row;
+		text-align: center;
+	}
+	
+	
+
